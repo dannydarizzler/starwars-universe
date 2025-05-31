@@ -17,7 +17,7 @@
 			</label>
 		</div>
 		<div class="col-md-6">
-			<label class="form-label">Klima:
+			<label class="form-label">Art:
 				<input name="climate" class="form-control" />
 			</label>
 		</div>
@@ -56,7 +56,7 @@
 								<div class="flip-card-back p-3">
 									<h5>{planet.name}</h5>
 									<p><strong>Spezies:</strong> {planet.species}</p>
-									<p><strong>Klima:</strong> {planet.climate}</p>
+									<p><strong>Art:</strong> {planet.climate}</p>
 
 									<form method="POST" action="?/delete">
 										<input type="hidden" name="id" value={planet._id} />
