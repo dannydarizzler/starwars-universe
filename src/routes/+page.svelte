@@ -17,7 +17,7 @@
   
   <style>
     .startscreen {
-      background-image: url('https://i.pinimg.com/736x/f1/3a/29/f13a294c4b03eed7335b6b641cc818ff.jpg');
+      background-image: url('https://i.pinimg.com/736x/66/b3/28/66b328b53fc65d0842959a90e46ec263.jpg');
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
