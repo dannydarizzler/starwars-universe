@@ -1,5 +1,6 @@
 <script lang="ts">
 	export let data;
+	import "$lib/styles/flipcard.css";
 </script>
 
 <h1 class="text-center my-4">Raumschiff erstellen</h1>
@@ -67,45 +68,3 @@
 {:else}
 	<p class="text-center">Keine Raumschiffe vorhanden.</p>
 {/if}
-
-<style>
-	.card-container {
-		perspective: 1000px;
-	}
-	.flip-card {
-		width: 100%;
-		height: 400px;
-		position: relative;
-	}
-	.flip-card-inner {
-		position: relative;
-		width: 100%;
-		height: 100%;
-		text-align: center;
-		transition: transform 1.5s;
-		transform-style: preserve-3d;
-	}
-	.flip-card:hover .flip-card-inner {
-		transform: rotateY(180deg);
-	}
-	.flip-card-front,
-	.flip-card-back {
-		position: absolute;
-		width: 100%;
-		height: 100%;
-		backface-visibility: hidden;
-		border: 1px solid #ccc;
-		border-radius: 10px;
-		overflow: hidden;
-		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-	}
-	.flip-card-front {
-		background-color: #000;
-		color: white;
-	}
-	.flip-card-back {
-		background-color: #f8f9fa;
-		color: black;
-		transform: rotateY(180deg);
-	}
-</style>
