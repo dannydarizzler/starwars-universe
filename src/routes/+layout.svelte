@@ -1,8 +1,9 @@
 <nav>
   <a href="/" style="margin-right: 1rem;">Home</a>
-  <a href="/characters" style="margin-right: 1rem;">Characters</a>
-  <a href="/planets" style="margin-right: 1rem;">Planets</a>
-  <a href="/spaceships">Spaceships</a>
+  <a href="/characters" style="margin-right: 1rem;">Charaktere</a>
+  <a href="/planets" style="margin-right: 1rem;">Planeten</a>
+  <a href="/spaceships">Raumschiffe</a>
+  <a href="/chat">Star wars Chatbot 🤖</a>
 </nav>
 
   
