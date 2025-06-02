@@ -1,10 +1,12 @@
 import { MongoClient, ObjectId } from 'mongodb';
+import { MONGODB_URI, MONGODB_DB } from '$env/static/private';
 
-const uri = 'mongodb://127.0.0.1:27017';
-const client = new MongoClient(uri);
+const client = new MongoClient(MONGODB_URI);
 await client.connect();
 
-const db = client.db('starwars');
+const db = client.db(MONGODB_DB);
+
+export { db, ObjectId };
 
 // === CHARACTERS ===
 
