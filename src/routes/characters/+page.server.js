@@ -4,7 +4,7 @@ import {
   deleteCharacter,
   getPlanets,
   getSpaceships
-} from '$lib/db';
+} from "$lib/db";
 
 export const load = async () => {
   const characters = await getCharacters();
@@ -17,8 +17,8 @@ export const load = async () => {
 
     return {
       ...char,
-      planetName: planet?.name || 'Unbekannt',
-      spaceshipName: spaceship?.name || 'Unbekannt'
+      planetName: planet?.name || "Unbekannt",
+      spaceshipName: spaceship?.name || "Unbekannt"
     };
   });
 
@@ -33,13 +33,13 @@ export const actions = {
   create: async ({ request }) => {
     const form = await request.formData();
     const character = {
-      name: form.get('name'),
-      religion: form.get('religion'),
-      weapon: form.get('weapon'),
-      abilities: form.get('abilities')?.split(',').map(s => s.trim()),
-      image: form.get('image'),
-      planet_id: form.get('planet_id'),
-      spaceship_id: form.get('spaceship_id')
+      name: form.get("name"),
+      religion: form.get("religion"),
+      weapon: form.get("weapon"),
+      abilities: form.get("abilities")?.split(',').map(s => s.trim()),
+      image: form.get("image"),
+      planet_id: form.get("planet_id"),
+      spaceship_id: form.get("spaceship_id")
     };
     await createCharacter(character);
     return { success: true };
@@ -47,7 +47,7 @@ export const actions = {
 
   delete: async ({ request }) => {
     const form = await request.formData();
-    const id = form.get('id');
+    const id = form.get("id");
     await deleteCharacter(id);
     return { success: true };
   }

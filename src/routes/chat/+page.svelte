@@ -1,5 +1,5 @@
 <script>
-    import { onMount } from 'svelte';
+    import { onMount } from "svelte";
     let userInput = '';
     let response = '';
     let loading = false;

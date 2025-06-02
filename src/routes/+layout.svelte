@@ -14,7 +14,7 @@
   background-color: black;
   margin: 0;
   color: #ffe81f;
-  font-family: 'Pathway Gothic One', sans-serif;
+  font-family: "Pathway Gothic One", sans-serif;
 }
 
     nav {
@@ -26,7 +26,7 @@
       align-items: center;
       justify-content: flex-start;
       box-shadow: 0 0 10px #ffe81f;
-      font-family: 'Pathway Gothic One', sans-serif;
+      font-family: "Pathway Gothic One", sans-serif;
       position: sticky;
       top: 0;
       z-index: 999;

@@ -39,7 +39,7 @@
       font-size: 3rem;
       color: #ffe81f;
       margin-bottom: 2rem;
-      font-family: 'Pathway Gothic One', sans-serif;
+      font-family: "Pathway Gothic One", sans-serif;
     }
   
     .button-group {
