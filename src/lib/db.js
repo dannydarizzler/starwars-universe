@@ -39,7 +39,7 @@ export async function deletePlanet(id) {
 }
 
 // === SPACESHIPS ===
-// kannst du gleich analog hinzufügen, wenn nötig
+
 export async function getSpaceships() {
   const spaceships = await db.collection('spaceships').find({}).toArray();
   return spaceships.map((s) => ({ ...s, _id: s._id.toString() }));

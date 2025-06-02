@@ -11,13 +11,14 @@
         <a href="/characters" class="btn">Charaktere</a>
         <a href="/spaceships" class="btn">Raumschiffe</a>
         <a href="/planets" class="btn">Planeten</a>
+        
       </div>
     </div>
   </div>
   
   <style>
     .startscreen {
-      background-image: url('https://i.pinimg.com/736x/66/b3/28/66b328b53fc65d0842959a90e46ec263.jpg');
+      background-image: url("https://i.pinimg.com/736x/64/cc/45/64cc45cb070e52724753a0645c2adc6d.jpg");
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
